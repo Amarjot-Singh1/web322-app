@@ -1,0 +1,23 @@
+{
+  "name": "web322-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amarjot-Singh1/web322-app.git"
+  },
+  "author": "Amarjot Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amarjot-Singh1/web322-app/issues"
+  },
+  "homepage": "https://github.com/Amarjot-Singh1/web322-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
