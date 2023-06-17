@@ -5,7 +5,7 @@
 * 
 *  Name: Amarjot Singh Student ID: 172521213  Date: 16/06/2023
 *
-*  Online (Cyclic) Link: 
+*  Online (Cyclic) Link: https://fierce-tweed-jacket-deer.cyclic.app
 *
 ********************************************************************************/ 
 
@@ -16,11 +16,11 @@ const multer = require("multer");
 const cloudinary = require('cloudinary').v2;
 const streamifier = require('streamifier');
 
-cloudinary.config({
-    cloud_name: 'dkk91q9sj', 
-    api_key: '559524833468944', 
-    api_secret: '4rfjQisHQISi-inFB21JqHNgGhkt',
-    secure: true
+cloudinary.config({ 
+  cloud_name: 'dwnzbw471', 
+  api_key: '158811645749647', 
+  api_secret: 'LMciiQzzOGcGzFaSB_MASfgVFMI', 
+  secure: true
 });
 
 const upload = multer(); 
