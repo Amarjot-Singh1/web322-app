@@ -13,6 +13,7 @@
 const express = require('express');
 const path = require('path');
 const multer = require("multer");
+const exphbs = require('express-handlebars');
 const cloudinary = require('cloudinary').v2;
 const streamifier = require('streamifier');
 
@@ -29,6 +30,12 @@ const storeService = require('./store-service');
 
 const PORT = process.env.PORT || 8080;
 
+// Register handlebars as the rendering engine for views
+app.engine('.hbs', exphbs.engine({ extname: '.hbs' }));
+app.set('view engine', '.hbs');
+
+
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
@@ -36,8 +43,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/about.html'));
-});
+  res.render('about');
+  });
+
+
 
 // Adding the /shop route
 app.get('/shop', (req, res) => {
